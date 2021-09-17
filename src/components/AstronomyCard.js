@@ -18,6 +18,8 @@ function AstronomyCard({data}) {
         <div>
             <h3>{data.title}</h3>
             <img src={`${data.url}`} alt="space"/>
+            <p>{data.date}</p>
+            <p>{data.explanation}</p>
             <button onClick={(event) => handleClick(event)}>Like</button>
         </div>
     )

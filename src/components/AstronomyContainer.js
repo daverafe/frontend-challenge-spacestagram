@@ -4,8 +4,8 @@ import AstronomyCard from './AstronomyCard'
 function AstronomyContainer({astronomyData}) {
     return (
         <div>
-            {astronomyData.map(data => {
-                return <AstronomyCard data={data}/>
+            {astronomyData.map((data, index) => {
+                return <AstronomyCard key={index} data={data}/>
             })}
         </div>
     )
