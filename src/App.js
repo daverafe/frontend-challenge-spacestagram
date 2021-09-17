@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <h1>Welcome To Spacetagram</h1>
-      <AstronomyContainer astronomyData={astronomyData}/>
+      {astronomyData.length > 0 ? <AstronomyContainer astronomyData={astronomyData}/> : <h1>Loading</h1>}
     </div>
   );
 }
