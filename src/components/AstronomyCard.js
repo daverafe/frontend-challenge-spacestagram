@@ -1,6 +1,8 @@
 import React from 'react'
 
 function AstronomyCard() {
+
+
     return (
         <div>
             
