@@ -7,7 +7,7 @@ function App() {
   const [astronomyData, setAstronomyData] = useState([])
 
   useEffect(() => {
-    fetch('https://api.nasa.gov/planetary/apod?count=10&api_key=sZRkR3ohLl9HFh3RqMCLquWm9tkhkWWd88yTNEv2')
+    fetch('https://api.nasa.gov/planetary/apod?count=9&api_key=sZRkR3ohLl9HFh3RqMCLquWm9tkhkWWd88yTNEv2')
     .then(resp => resp.json())
     .then(data => {
       setAstronomyData(data)

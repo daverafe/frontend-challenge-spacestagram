@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {Col, Card, Button} from 'react-bootstrap'
 
 function AstronomyCard({data}) {
 
@@ -15,13 +16,20 @@ function AstronomyCard({data}) {
     }
 
     return (
-        <div>
-            <h3>{data.title}</h3>
-            <img src={`${data.url}`} alt="space"/>
-            <p>{data.date}</p>
-            <p>{data.explanation}</p>
-            <button onClick={(event) => handleClick(event)}>Like</button>
-        </div>
+        <>
+        <Col>
+           <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={`${data.url}`} alt="space" />
+                <Card.Body>
+                    <Card.Title>{data.title}</Card.Title>
+                    <Card.Text>
+                        {data.date}
+                    </Card.Text>
+                    <Button variant="primary" onClick={(event) => handleClick(event)}>Like</Button>
+                </Card.Body>
+            </Card>
+        </Col>
+        </>
     )
 }
 
