@@ -9,7 +9,7 @@ function AstronomyCard({data}) {
     const handleLike = (event) => {
         if(liked === false){
             setLiked(true)
-            event.target.innerHTML = "<span>Like&#10084;</span>" 
+            event.target.innerHTML = "<span>Like❤️</span>" 
         } else {
             setLiked(false)
             event.target.innerHTML = "<span>Like&#9825;</span>"
