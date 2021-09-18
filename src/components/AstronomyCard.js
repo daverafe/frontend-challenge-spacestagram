@@ -30,7 +30,7 @@ function AstronomyCard({data}) {
         <>
         <Col>
            <Card style={{ width: '20rem' }}>
-                <Card.Img variant="top" src={`${data.url}`} alt="space" />
+                <Card.Img variant="top" src={`${data.url}`} alt="Astronomy Photo" />
                 <Card.Body>
                     <Card.Title>{data.title}</Card.Title>
                     <Card.Text>
