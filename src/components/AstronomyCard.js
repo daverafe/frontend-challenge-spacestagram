@@ -9,10 +9,10 @@ function AstronomyCard({data}) {
     const handleLike = (event) => {
         if(liked === false){
             setLiked(true)
-            event.target.innerText = "liked" 
+            event.target.innerHTML = "<span>&#10084;</span>" 
         } else {
             setLiked(false)
-            event.target.innerText = "like"
+            event.target.innerHTML = "Like<span>&#9825;</span>"
         }
     }
 
@@ -39,7 +39,7 @@ function AstronomyCard({data}) {
                     <Card.Text>
                         {explanation}
                     </Card.Text>
-                    <Button variant="primary" onClick={(event) => handleLike(event)}>Like</Button>
+                    <Button id="like-bttn" variant="light" onClick={(event) => handleLike(event)}>Like<span>&#9825;</span></Button>
                     <Button variant="primary" onClick={(event) => handleExplanation(event)}>See More Info</Button>
                 </Card.Body>
             </Card>
